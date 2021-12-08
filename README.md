@@ -49,8 +49,10 @@ Bu repository [Patika](https://app.patika.dev/) Veri Yapıları ve Algoritmalar 
   ```
 
 - [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
-` [7,3,5,8,2,9,4,15,6] -> (n) [2,3,5,8,7,9,4,15,6] -> (n-1) [2,3,4,8,7,9,5,15,6] -> (n-2) [2,3,4,5,7,9,8,15,6] -> (n-3) `
+`[7,3,5,8,2,9,4,15,6] -> (n) [2,3,5,8,7,9,4,15,6] -> (n-1) [2,3,4,8,7,9,5,15,6] -> (n-2) [2,3,4,5,7,9,8,15,6] -> (n-3)`
 </details>
+
+---
 
 # Soru_2
 
@@ -58,22 +60,52 @@ Bu repository [Patika](https://app.patika.dev/) Veri Yapıları ve Algoritmalar 
 <summary> Soru & Cevap </summary>
 [16,21,11,8,12,22] -> Merge Sort
 
- - Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
-    ```
-                        [16,21,11,8,12,22]
-                      [16,21,11]   [8,12,22]
-                  [16] - [21,11]   [8] - [12,22]
-            ------------------------------------------
-              [16] - [21] - [11]   [8] - [12] - [22]
-            ------------------------------------------
-                  [16] - [11,21]   [8] - [12,22]
-                      [11,16,21]   [8,12,22]
-                        [8,11,12,16,21,21]
-    ```
- - Big-O gösterimini yazınız.
-    ```
-    n = 2^x
-    logn = x
-    O(n logn) => her ayırma ve birleştirme işlemde O(n) geliyor
-    ```
+- Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+  ```
+                      [16,21,11,8,12,22]
+                    [16,21,11]   [8,12,22]
+                [16] - [21,11]   [8] - [12,22]
+          ------------------------------------------
+            [16] - [21] - [11]   [8] - [12] - [22]
+          ------------------------------------------
+                [16] - [11,21]   [8] - [12,22]
+                    [11,16,21]   [8,12,22]
+                      [8,11,12,16,21,21]
+  ```
+- Big-O gösterimini yazınız.
+  ```
+  n = 2^x
+  logn = x
+  O(n logn) => her ayırma ve birleştirme işlemde O(n) geliyor
+  ```
+
+</details>
+
+---
+
+# Soru_3
+
+<details close>
+<summary> Soru & Cevap </summary>
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+
+- dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+  ```
+  [0,1,2,3,4,5,6,7,8,9] yukarıda ki dizi'nin sıralanmış halidir
+
+  root değer = 5
+  en küçük = 0
+  en büyük = 9
+
+  root = 5 / sağında = 7 / solunda = 3
+
+                       5
+                  3         7
+                2  4      6   8
+               1               9
+              0
+  ```
+
 </details>
